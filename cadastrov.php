@@ -163,7 +163,10 @@
                                 <div class="card-header">
                                     <h4 class="card-title">Cadastro de Veículos</h4>
                                     <?php
-                                        $carros->cadastrar();
+                                        if (isset($_POST["enviar"])){
+                                            $carros->cadastrar();
+                                        }
+                                        
                                     ?>
                                 </div>
                                 <div class="card-body">
